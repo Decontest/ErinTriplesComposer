@@ -1,0 +1,12 @@
+Outline of tasks for the project.
+
+Create a permutation class, capable of permuting arrays in order to maniplute the lead heads of erin.
+Create a lead head class containing:
+  an array (the lead head), a string (the composition), an integer (the number of leads rung) and an array (containing the lead heads false against the current composition).
+
+Test both, seperately and in conjunction.
+
+Have a stack for the lead ends (check that this works).
+
+Write the control flow for the search in main. Aim to multi-thread.
+Programme should output to a text file successful compositions.
