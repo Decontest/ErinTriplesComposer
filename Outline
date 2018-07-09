@@ -10,3 +10,16 @@ Have a stack for the lead ends (check that this works).
 
 Write the control flow for the search in main. Aim to multi-thread.
 Programme should output to a text file successful compositions.
+
+
+The permutations will work in two different ways.
+
+The first will be as true permutations, where the array of the permutation will give the cycle structure. This cycle structure will then act on a target array.
+The method will have to check to make sure that the target array is at least as large as the largest integer in the cycle structure.
+When a permutation has more than one cycle in it's notation, we can compose individual cycles e.g.
+  ((12)(34))(x) can be treated as (12).(34)(x)
+This means that we can limit the permutation class to consist of one array per member.
+Rather than deal with what to do with permutations with order>2, we shall decompose them into pairs to be swapped when the method is called e.g.
+  (123)(x) has an identical effect to (13).(12)(x)
+  
+The second use shall be as substitutions, e.g. leadhead substitutions.
